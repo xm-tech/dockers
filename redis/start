@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker rm redis
+docker run -d \
+-p 6379:6379 \
+-v /Users/maxiongmiao/dockers/redis/config/redis_6379.conf:/etc/redis/redis.conf \
+-v /Users/maxiongmiao/dockers/redis/data:/data \
+--privileged=true \
+--name redis \
+redis \
+redis-server /etc/redis/redis.conf
