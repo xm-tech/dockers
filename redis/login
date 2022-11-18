@@ -1,2 +1,2 @@
 #!/bin/sh
-docker exec -it redis 
+docker exec --interactive --tty redis /bin/bash
