@@ -1,0 +1,3 @@
+[submodule "go-docker-dev"]
+	path = go-docker-dev
+	url = git@github.com:xm-tech/go-docker-dev.git

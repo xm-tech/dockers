@@ -1,0 +1,1 @@
+docker rmi xxxx -f
