@@ -1,7 +1,10 @@
 #!/bin/bash
-image="bitnami/mariadb"
+# image="bitnami/mariadb"
 # image="mariadb:latest"
-password=123456
-name=maxm-mariadb
-docker run -p 3306:3306 --name ${name} -e MARIADB_ROOT_PASSWORD=${password} -d ${image}
+# password=123456
+# name=maxm-mariadb
+# docker run -p 3306:3306 --name ${name} -e MARIADB_ROOT_PASSWORD=${password} -d ${image}
 
+
+
+docker run -p 3306:3306 --detach --name maxm-mariadb --env MARIADB_USER=maxm --env MARIADB_PASSWORD=123456 --env MARIADB_ROOT_PASSWORD=maxmMariadb#@!  mariadb:10.10.2
